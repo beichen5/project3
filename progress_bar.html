@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>progress-bar</title>
+	<style>
+        @font-face {
+            font-family: merriweather;
+            src: url(font/MerriweatherSans-Bold.ttf);
+        }
+
+		body {
+			margin: 0;
+			padding: 0;
+            background-color: black;
+		}
+        .bar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse; 
+            height: 100vh;
+        }
+		.progress-bar {
+			height: 20px;
+            width: 50vw;
+			border:1px solid white;
+            overflow: hidden;
+		}
+		.progress {
+			width: 0;
+			height: 100%;
+			background-color: white;
+            transition: width 0.05s ease;
+		}
+		.progress-text {
+			width: 100%;
+			font-size: 24px;
+            color:white;
+            font-family: merriweather;
+            text-align: center;
+		}
+	</style>
+</head>
+<body>
+    <div class="bar">
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <div class="progress-text">Redeem Your Puppy...</div>
+    </div>
+
+	<script>
+		window.onload = function() {
+			var progressBar = document.querySelector('.progress');
+			var progressText = document.querySelector('.progress-text');
+
+			var interval = setInterval(function() {
+				if (progressBar.clientWidth >= progressBar.parentElement.clientWidth) {
+					clearInterval(interval);
+					progressText.textContent = "Loading complete. Let's start...";
+				} else {
+					progressBar.style.width = (progressBar.clientWidth + 10) + 'px';
+				}
+			}, 30);
+		}
+	</script>
+</body>
+</html>
