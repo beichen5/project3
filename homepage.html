@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>homepage</title>
 	<style>
-        @font-face {
-            font-family: merriweather;
-            src: url(font/MerriweatherSans-Bold.ttf);
-        }
+		@font-face {
+			font-family: merriweather;
+			src: url(font/MerriweatherSans-Bold.ttf);
+		}
 
 		body {
 			margin: 0;
 			padding: 0;
-            background-color: black;
-            overflow-x: scroll; 
+			background-color: black;
+			overflow-x: scroll;
 		}
 
-		.all_line{
+		.all_line {
 			display: flex;
 			flex-direction: column;
 		}
 
-        .line {
-			background-color: white; 
-			position:fixed;
+		.line {
+			background-color: white;
+			position: fixed;
 			bottom: 0;
 			left: 0;
 			right: 0;
@@ -30,194 +31,195 @@
 		}
 
 		.line:nth-child(1) {
-			top: 2%; 
-            height: 5px; 
-			width:95%; 
+			top: 2%;
+			height: 5px;
+			width: 95%;
 		}
 
 		.line:nth-child(2) {
-			top: 12%; 
-            height: 2px; 
-			width:85%; 
+			top: 12%;
+			height: 2px;
+			width: 85%;
 		}
 
 		.line:nth-child(3) {
-			top: 22%; 
-            height: 2px; 
-			width:85%; 
+			top: 22%;
+			height: 2px;
+			width: 85%;
 		}
 
 		.line:nth-child(4) {
-			top: 32%; 
-            height: 5px; 
-			width:95%; 
+			top: 32%;
+			height: 5px;
+			width: 95%;
 		}
 
 		.line:nth-child(5) {
-			top: 40%; 
-            height: 2px; 
-			width:85%; 
+			top: 40%;
+			height: 2px;
+			width: 85%;
 		}
 
 		.line:nth-child(6) {
-			top: 52%; 
-            height: 2px; 
-			width:85%; 
+			top: 52%;
+			height: 2px;
+			width: 85%;
 		}
 
 		.line:nth-child(7) {
-			top: 62%; 
-            height: 5px; 
-			width:95%; 
+			top: 62%;
+			height: 5px;
+			width: 95%;
 		}
 
 		.line:nth-child(8) {
 			top: 72%;
-            height: 2px; 
-			width:85%; 
+			height: 2px;
+			width: 85%;
 		}
 
 		.line:nth-child(9) {
-			top: 82%; 
-            height: 2px; 
-			width:85%;
+			top: 82%;
+			height: 2px;
+			width: 85%;
 		}
 
 		.line:nth-child(10) {
-			top: 92%; 
-            height: 5px; 
-			width:95%; 
+			top: 92%;
+			height: 5px;
+			width: 95%;
 		}
 
-		.container{
-			height:100vh;
+		.container {
+			height: 100vh;
 			display: flex;
-			flex-direction:column-reverse;
+			flex-direction: column-reverse;
 		}
 
-		.dog_image{
+		.dog_image {
 			display: flex;
-            flex-direction: row;
+			flex-direction: row;
 		}
 
-        .dogs{
-            height:100vh;
+		.dogs {
+			height: 100vh;
 			margin-bottom: 0px;
 			filter: grayscale(100%);
 			transition: 0.3s;
 			margin-right: -15vw;
 			z-index: 10;
-        }
+		}
 
-		.dogs:hover{
+		.dogs:hover {
 			filter: grayscale(0%);
 		}
 
 		.footer-fixed {
-                bottom: 0;
-                width: 100vw;
-                height: 50px;
-                display: flex;
-				flex-direction: row-reverse;
-                position: fixed;
-                background-color:black;
-				z-index: 20;
-            }
+			bottom: 0;
+			width: 100vw;
+			height: 50px;
+			display: flex;
+			flex-direction: row-reverse;
+			position: fixed;
+			background-color: black;
+			z-index: 20;
+		}
 
-            .footer-text {
-				border: 1px solid white;
-				margin-top: 10px;
-				margin-right: 10px;
-                font-size: 20px;
-                color: #fff;
-				font-family: merriweather;
-            }
+		.footer-text {
+			border: 1px solid white;
+			margin-top: 10px;
+			margin-right: 10px;
+			font-size: 20px;
+			color: #fff;
+			font-family: merriweather;
+		}
 
-            .footer-fixed-placeholder {
-                height: 50px;
-                width: 100vw;
-                margin-top: 30px;
-            }
-
+		.footer-fixed-placeholder {
+			height: 50px;
+			width: 100vw;
+			margin-top: 30px;
+		}
 	</style>
 </head>
+
 <body>
-    <div class="all_line">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </div>
+	<!-- <div class="all_line">
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+	</div> -->
 	<div class="container">
-	<div class="dog_image">
-        <img class="dogs" src="img/cockapoo.png">
-        <img class="dogs" src="img/Weimaraner.png">
-		<img class="dogs" src="img/Dalmatian.png">
-		<img class="dogs" src="img/Hound.png">
-		<img class="dogs" src="img/SharPei.png">
-		<img class="dogs" src="img/BelgianShepherd.png">
-		<img class="dogs" src="img/Rhodesian Ridgeback.png">
-		<img class="dogs" src="img/Collie.png">
-		<img class="dogs" src="img/Wheaton Terrier.png">
-		<img class="dogs" src="img/Labradoodle.png">
-		<img class="dogs" src="img/Mastiff.png">
-		<img class="dogs" src="img/Pug.png">
-		<img class="dogs" src="img/West High White Terrier.png">
-		<img class="dogs" src="img/Great Dane.png">
-		<img class="dogs" src="img/corgi.png">
-		<img class="dogs" src="img/Pekingese.png">
-		<img class="dogs" src="img/American Bully.png">
-		<img class="dogs" src="img/Lhasa Apso.png">
-		<img class="dogs" src="img/Miniature Pinscher.png">
-		<img class="dogs" src="img/Dachshund Smooth Coat.png">
-		<img class="dogs" src="img/Havanese.png">
-		<img class="dogs" src="img/Boston Terrier.png">
-		<img class="dogs" src="img/Akita.png">
-		<img class="dogs" src="img/husky.png">
-		<img class="dogs" src="img/Australian Shepherd.png">
-		<img class="dogs" src="img/canecorso.png">
-		<img class="dogs" src="img/Bichon Frise.png">
-		<img class="dogs" src="img/Doberman Pinscher.png">
-		<img class="dogs" src="img/Chow Chow.png">
-		<img class="dogs" src="img/boxer.png">
-		<img class="dogs" src="img/Pomeranian.png">
-		<img class="dogs" src="img/American Staffordshire Terrier.png">
-		<img class="dogs" src="img/Shiba Inu.png">
-		<img class="dogs" src="img/Golden Retriever.png">
-		<img class="dogs" src="img/Beagle.png">
-		<img class="dogs" src="img/Terrier.png">
-		<img class="dogs" src="img/Cocker Spaniel.png">
-		<img class="dogs" src="img/Jack Russell Terrier.png">
-		<img class="dogs" src="img/Bull Dog.png">
-		<img class="dogs" src="img/Poodle.png">
-		<img class="dogs" src="img/Labrador Retriever.png">
-		<img class="dogs" src="img/Siberian Husky.png">
-		<img class="dogs" src="img/Rottweiler.png">
-		<img class="dogs" src="img/Yorkshire Terrier.png">
-		<img class="dogs" src="img/American Pit Bull Terrier.png">
-		<img class="dogs" src="img/mixed.png">
-		<img class="dogs" src="img/German Shepherd.png">
-		<img class="dogs" src="img/Chihuahua.png">
-		<img class="dogs" src="img/Shih Tzu.png">
-		<img class="dogs" src="img/Pit Bull.png">
-    </div>
+		<div class="dog_image">
+			<img class="dogs" src="img/cockapoo.png">
+			<img class="dogs" src="img/Weimaraner.png">
+			<img class="dogs" src="img/Dalmatian.png">
+			<img class="dogs" src="img/Hound.png">
+			<img class="dogs" src="img/SharPei.png">
+			<img class="dogs" src="img/BelgianShepherd.png">
+			<img class="dogs" src="img/Rhodesian Ridgeback.png">
+			<img class="dogs" src="img/Collie.png">
+			<img class="dogs" src="img/Wheaton Terrier.png">
+			<img class="dogs" src="img/Labradoodle.png">
+			<img class="dogs" src="img/Mastiff.png">
+			<img class="dogs" src="img/Pug.png">
+			<img class="dogs" src="img/West High White Terrier.png">
+			<img class="dogs" src="img/Great Dane.png">
+			<img class="dogs" src="img/corgi.png">
+			<img class="dogs" src="img/Pekingese.png">
+			<img class="dogs" src="img/American Bully.png">
+			<img class="dogs" src="img/Lhasa Apso.png">
+			<img class="dogs" src="img/Miniature Pinscher.png">
+			<img class="dogs" src="img/Dachshund Smooth Coat.png">
+			<img class="dogs" src="img/Havanese.png">
+			<img class="dogs" src="img/Boston Terrier.png">
+			<img class="dogs" src="img/Akita.png">
+			<img class="dogs" src="img/husky.png">
+			<img class="dogs" src="img/Australian Shepherd.png">
+			<img class="dogs" src="img/canecorso.png">
+			<img class="dogs" src="img/Bichon Frise.png">
+			<img class="dogs" src="img/Doberman Pinscher.png">
+			<img class="dogs" src="img/Chow Chow.png">
+			<img class="dogs" src="img/boxer.png">
+			<img class="dogs" src="img/Pomeranian.png">
+			<img class="dogs" src="img/American Staffordshire Terrier.png">
+			<img class="dogs" src="img/Shiba Inu.png">
+			<img class="dogs" src="img/Golden Retriever.png">
+			<img class="dogs" src="img/Beagle.png">
+			<img class="dogs" src="img/Terrier.png">
+			<img class="dogs" src="img/Cocker Spaniel.png">
+			<img class="dogs" src="img/Jack Russell Terrier.png">
+			<img class="dogs" src="img/Bull Dog.png">
+			<img class="dogs" src="img/Poodle.png">
+			<img class="dogs" src="img/Labrador Retriever.png">
+			<img class="dogs" src="img/Siberian Husky.png">
+			<img class="dogs" src="img/Rottweiler.png">
+			<img class="dogs" src="img/Yorkshire Terrier.png">
+			<img class="dogs" src="img/American Pit Bull Terrier.png">
+			<img class="dogs" src="img/mixed.png">
+			<img class="dogs" src="img/German Shepherd.png">
+			<img class="dogs" src="img/Chihuahua.png">
+			<img class="dogs" src="img/Shih Tzu.png">
+			<img class="dogs" src="img/Pit Bull.png">
+		</div>
 	</div>
-	
-	<div class="footer-fixed">
+
+	<!-- <div class="footer-fixed">
 		<div class="footer-fixed-list">
 			<div class="footer-text">CRIMES</div>
 		</div>
 		<div class="footer-fixed-list">
 			<div class="footer-text">SEARCH</div>
 		</div>
-	</div>
+	</div> -->
 	<script>
 	</script>
 </body>
+
 </html>
