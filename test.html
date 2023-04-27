@@ -1,12 +1,23 @@
+<!--
+ * @Author: y.Shui
+ * @Date: 2023-04-27 22:42:20
+ * @LastEditors: y.Shui
+ * @LastEditTime: 2023-04-27 22:58:45
+ * @FilePath: /beichen/project3/test.html
+ * @Description: 
+-->
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<title>homepage</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 	<style>
-		@font-face {
-			font-family: merriweather;
-			src: url(font/MerriweatherSans-Bold.ttf);
+		html {
+			overflow: hidden;
 		}
 
 		body {
@@ -91,23 +102,22 @@
 		}
 
 		.container {
-			height: 100vh;
 			display: flex;
+			height: 100vh;
+			overflow: scroll;
 			flex-direction: column-reverse;
 		}
 
 		.dog_image {
+			width: 100%;
 			display: flex;
-			flex-direction: row;
 		}
 
 		.dogs {
-			height: 100vh;
-			margin-bottom: 0px;
+			width: 100%;
+			height: 100%;
 			filter: grayscale(100%);
-			transition: 0.3s;
-			margin-right: -15vw;
-			z-index: 10;
+			object-fit: contain;
 		}
 
 		.dogs:hover {
@@ -143,19 +153,20 @@
 </head>
 
 <body>
-	<!-- <div class="all_line">
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-	</div> -->
 	<div class="container">
+		<div class="all_line">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+
 		<div class="dog_image">
 			<img class="dogs" src="img/cockapoo.png">
 			<img class="dogs" src="img/Weimaraner.png">
@@ -208,18 +219,17 @@
 			<img class="dogs" src="img/Shih Tzu.png">
 			<img class="dogs" src="img/Pit Bull.png">
 		</div>
-	</div>
 
-	<!-- <div class="footer-fixed">
-		<div class="footer-fixed-list">
-			<div class="footer-text">CRIMES</div>
+
+		<div class="footer-fixed">
+			<div class="footer-fixed-list">
+				<div class="footer-text">CRIMES</div>
+			</div>
+			<div class="footer-fixed-list">
+				<div class="footer-text">SEARCH</div>
+			</div>
 		</div>
-		<div class="footer-fixed-list">
-			<div class="footer-text">SEARCH</div>
-		</div>
-	</div> -->
-	<script>
-	</script>
+	</div>
 </body>
 
 </html>
