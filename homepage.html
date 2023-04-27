@@ -14,6 +14,9 @@
             background-color: black;
             overflow-x: scroll; 
 		}
+		.line_image{
+			height:80vh;
+		}
 		.all_line{
 			display: flex;
 			flex-direction: column;
@@ -97,9 +100,36 @@
 			filter: grayscale(0%);
 		}
 
+		.footer-fixed {
+                bottom: 0;
+                width: 100vw;
+                height: 50px;
+                display: flex;
+				flex-direction: row-reverse;
+                position: fixed;
+                background-color:black;
+				z-index: 20;
+            }
+
+            .footer-text {
+				border: 1px solid white;
+				margin-top: 10px;
+				margin-right: 10px;
+                font-size: 20px;
+                color: #fff;
+				font-family: merriweather;
+            }
+
+            .footer-fixed-placeholder {
+                height: 50px;
+                width: 100vw;
+                margin-top: 30px;
+            }
+
 	</style>
 </head>
 <body>
+	<div class="line_image">
     <div class="all_line">
         <div class="line"></div>
         <div class="line"></div>
@@ -165,6 +195,15 @@
 		<img class="dogs" src="img/Shih Tzu.png">
 		<img class="dogs" src="img/Pit Bull.png">
     </div>
+	</div>
+	</div>
+	<div class="footer-fixed">
+		<div class="footer-fixed-list">
+			<div class="footer-text">CRIMES</div>
+		</div>
+		<div class="footer-fixed-list">
+			<div class="footer-text">SEARCH</div>
+		</div>
 	</div>
 	<script>
 	</script>
