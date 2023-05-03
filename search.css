@@ -1,0 +1,76 @@
+@font-face {
+    font-family: merriweather;
+    src: url(font/MerriweatherSans-Bold.ttf);
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+  }
+  .whole{
+    display:flex;
+    flex-direction: column;
+  }
+  h1 {
+    display:flex;
+    align-items: center;
+    color: white;
+    font-family: merriweather;
+  }
+  /*.bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }*/
+  input[type="text"] {
+    padding: 3px;
+    font-size: 16px;
+    border: 3px solid white;
+    background-color: black;
+    height: 100%;
+    width: 60%;
+    font-family: merriweather;
+    color:white;
+  }
+  
+  button {
+    height:100%;
+    padding: 5px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-family: merriweather;
+    border:1px solid white;
+  }
+  
+  button:hover {
+    color: white;
+    background-color: black;
+  }
+  
+  #search-results {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    color:white;
+  }
+  .back{
+    width:45px;
+    padding: 5px;
+    font-size: 16px;
+    background-color:black;
+    color: white;
+    font-family: merriweather;
+    border:3px solid white;
+  }
+  .back:hover{
+    background-color:white;
+    color: black;
+    border:3px solid white;
+  }
+  a:link{
+    text-decoration: none;
+  }
+  .portfolio{
+    width:100%;
+  }

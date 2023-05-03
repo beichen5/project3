@@ -10,6 +10,16 @@
 		html {
 			overflow: hidden;
 		}
+		
+		@media screen and (max-width: 375px) {
+			.dog_image {
+				width:100%;
+			}
+		}
+		@font-face {
+			font-family: merriweather;
+			src: url(font/MerriweatherSans-Bold.ttf);
+		}
 
 		body {
 			margin: 0;
@@ -17,6 +27,7 @@
 			background-color: black;
 			overflow-x: scroll;
 		}
+
 
 		.all_line {
 			display: flex;
@@ -100,7 +111,8 @@
 		}
 
 		.dog_image {
-			width: 50%;
+			height:100%;
+			/*width: 50%;*/
 			display: flex;
 		}
 
@@ -115,6 +127,65 @@
 			filter: grayscale(0%);
 		}
 
+		/* 弹窗的样式 */
+		#modal {
+			display: none; /* 初始状态下隐藏 */
+			position: fixed;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background-color: rgba(0,0,0,0.8); /* 背景变暗 */
+		}
+		/* 弹窗内容的样式 */
+		#modal-content {
+			background-color: black;
+			margin: 7% auto;
+			padding: 20px;
+			border: 1px solid #888;
+			width: 50%;
+		}
+
+		/* 关闭按钮的样式 */
+		.close {
+			color: rgb(255, 255, 255);
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+			margin-top: -10px;
+		}
+		
+		/* 关闭按钮悬停时的样式 */
+		.close:hover,
+		.close:focus {
+			color: rgb(201, 201, 201);
+			text-decoration: none;
+			cursor: pointer;
+		}
+		
+		/* 关闭按钮的样式 */
+		button {
+			color: white;
+			border: 3px solid white;
+			background-color: black;
+			float: left;
+			font-size: 28px;
+			font-weight: bold;
+		}
+
+		button:hover {
+			color: black;
+			border: 3px solid white;
+			background-color: white;
+		}
+		
+		img{
+			height:70%;
+			width:100%;
+		}
+
 		.footer-fixed {
 			bottom: 0;
 			width: 100vw;
@@ -127,12 +198,13 @@
 		}
 
 		.footer-text {
-			border: 1px solid white;
-			margin-top: 10px;
+			border: 3px solid white;
+			margin-top: 6px;
 			margin-right: 10px;
 			font-size: 20px;
 			color: #fff;
 			font-family: merriweather;
+			padding:4px;
 		}
 
 		.footer-fixed-placeholder {
@@ -159,56 +231,56 @@
 		</div>
 
 		<div class="dog_image">
-			<img class="dogs" src="img/cockapoo.png">
-			<img class="dogs" src="img/Weimaraner.png">
-			<img class="dogs" src="img/Dalmatian.png">
-			<img class="dogs" src="img/Hound.png">
-			<img class="dogs" src="img/SharPei.png">
-			<img class="dogs" src="img/BelgianShepherd.png">
-			<img class="dogs" src="img/Rhodesian Ridgeback.png">
-			<img class="dogs" src="img/Collie.png">
-			<img class="dogs" src="img/Wheaton Terrier.png">
-			<img class="dogs" src="img/Labradoodle.png">
-			<img class="dogs" src="img/Mastiff.png">
-			<img class="dogs" src="img/Pug.png">
-			<img class="dogs" src="img/West High White Terrier.png">
-			<img class="dogs" src="img/Great Dane.png">
-			<img class="dogs" src="img/corgi.png">
-			<img class="dogs" src="img/Pekingese.png">
-			<img class="dogs" src="img/American Bully.png">
-			<img class="dogs" src="img/Lhasa Apso.png">
-			<img class="dogs" src="img/Miniature Pinscher.png">
-			<img class="dogs" src="img/Dachshund Smooth Coat.png">
-			<img class="dogs" src="img/Havanese.png">
-			<img class="dogs" src="img/Boston Terrier.png">
-			<img class="dogs" src="img/Akita.png">
-			<img class="dogs" src="img/husky.png">
-			<img class="dogs" src="img/Australian Shepherd.png">
-			<img class="dogs" src="img/canecorso.png">
-			<img class="dogs" src="img/Bichon Frise.png">
-			<img class="dogs" src="img/Doberman Pinscher.png">
-			<img class="dogs" src="img/Chow Chow.png">
-			<img class="dogs" src="img/boxer.png">
-			<img class="dogs" src="img/Pomeranian.png">
-			<img class="dogs" src="img/American Staffordshire Terrier.png">
-			<img class="dogs" src="img/Shiba Inu.png">
-			<img class="dogs" src="img/Golden Retriever.png">
-			<img class="dogs" src="img/Beagle.png">
-			<img class="dogs" src="img/Terrier.png">
-			<img class="dogs" src="img/Cocker Spaniel.png">
-			<img class="dogs" src="img/Jack Russell Terrier.png">
-			<img class="dogs" src="img/Bull Dog.png">
-			<img class="dogs" src="img/Poodle.png">
-			<img class="dogs" src="img/Labrador Retriever.png">
-			<img class="dogs" src="img/Siberian Husky.png">
-			<img class="dogs" src="img/Rottweiler.png">
-			<img class="dogs" src="img/Yorkshire Terrier.png">
-			<img class="dogs" src="img/American Pit Bull Terrier.png">
-			<img class="dogs" src="img/mixed.png">
-			<img class="dogs" src="img/German Shepherd.png">
-			<img class="dogs" src="img/Chihuahua.png">
-			<img class="dogs" src="img/Shih Tzu.png">
-			<img class="dogs" src="img/Pit Bull.png">
+			<img class="dogs" src="img/cockapoo.png" onclick="openModal('img/redeem/cockapoo.jpg')">
+			<img class="dogs" src="img/Weimaraner.png" onclick="openModal('img/redeem/Weimaraner.jpg')">
+			<img class="dogs" src="img/Dalmatian.png" onclick="openModal('img/redeem/Dalmatian.jpg')">
+			<img class="dogs" src="img/Hound.png" onclick="openModal('img/redeem/hound.jpg')">
+			<img class="dogs" src="img/SharPei.png" onclick="openModal('img/redeem/sharpei.jpg')">
+			<img class="dogs" src="img/BelgianShepherd.png" onclick="openModal('img/redeem/Belgian Shepherd.jpg')">
+			<img class="dogs" src="img/Rhodesian Ridgeback.png" onclick="openModal('img/redeem/Rhodesian Ridgeback.jpg')">
+			<img class="dogs" src="img/Collie.png" onclick="openModal('img/redeem/Collie.jpg')">
+			<img class="dogs" src="img/Wheaton Terrier.png" onclick="openModal('img/redeem/WheatonTerrier.jpg')">
+			<img class="dogs" src="img/Labradoodle.png" onclick="openModal('img/redeem/Labradoodle.jpg')">
+			<img class="dogs" src="img/Mastiff.png" onclick="openModal('img/redeem/mastiff.jpg')">
+			<img class="dogs" src="img/Pug.png" onclick="openModal('img/redeem/pug.jpg')">
+			<img class="dogs" src="img/West High White Terrier.png" onclick="openModal('img/redeem/West High White Terrier.jpg')">
+			<img class="dogs" src="img/Great Dane.png" onclick="openModal('img/redeem/Great dane.jpg')">
+			<img class="dogs" src="img/corgi.png" onclick="openModal('img/redeem/corgi.jpg')">
+			<img class="dogs" src="img/Pekingese.png" onclick="openModal('img/redeem/pekingese.jpg')">
+			<img class="dogs" src="img/American Bully.png" onclick="openModal('img/redeem/American bully.jpg')">
+			<img class="dogs" src="img/Lhasa Apso.png" onclick="openModal('img/redeem/Lhasa apso.jpg')">
+			<img class="dogs" src="img/Miniature Pinscher.png" onclick="openModal('img/redeem/Miniature pinscher.jpg')">
+			<img class="dogs" src="img/Dachshund Smooth Coat.png" onclick="openModal('img/redeem/Dachshund smooth coat.jpg')">
+			<img class="dogs" src="img/Havanese.png" onclick="openModal('img/redeem/Havanese.jpg')">
+			<img class="dogs" src="img/Boston Terrier.png" onclick="openModal('img/redeem/boston terrier.jpg')">
+			<img class="dogs" src="img/Akita.png" onclick="openModal('img/redeem/Akita.jpg')">
+			<img class="dogs" src="img/husky.png" onclick="openModal('img/redeem/husky.jpg')">
+			<img class="dogs" src="img/Australian Shepherd.png" onclick="openModal('img/redeem/Australian Shepherd.jpg')">
+			<img class="dogs" src="img/canecorso.png" onclick="openModal('img/redeem/cane corso.jpg')">
+			<img class="dogs" src="img/Bichon Frise.png" onclick="openModal('img/redeem/Bichon frise.jpg')">
+			<img class="dogs" src="img/Doberman Pinscher.png" onclick="openModal('img/redeem/Doberman.jpg')">
+			<img class="dogs" src="img/Chow Chow.png" onclick="openModal('img/redeem/Chow chow.jpg')">
+			<img class="dogs" src="img/boxer.png" onclick="openModal('img/redeem/boxer.jpg')">
+			<img class="dogs" src="img/Pomeranian.png" onclick="openModal('img/redeem/Pomeranian.jpg')">
+			<img class="dogs" src="img/American Staffordshire Terrier.png" onclick="openModal('img/redeem/American stafford terrier.jpg')">
+			<img class="dogs" src="img/Shiba Inu.png" onclick="openModal('img/redeem/Shibainu.jpg')">
+			<img class="dogs" src="img/Golden Retriever.png" onclick="openModal('img/redeem/Golden retriever.jpg')">
+			<img class="dogs" src="img/Beagle.png" onclick="openModal('img/redeem/Beagle.jpg')">
+			<img class="dogs" src="img/Terrier.png" onclick="openModal('img/redeem/terrier.jpg')">
+			<img class="dogs" src="img/Cocker Spaniel.png" onclick="openModal('img/redeem/Cocker spaniel.jpg')">
+			<img class="dogs" src="img/Jack Russell Terrier.png" onclick="openModal('img/redeem/Jack russell terrier.jpg')">
+			<img class="dogs" src="img/Bull Dog.png" onclick="openModal('img/redeem/bulldog.jpg')">
+			<img class="dogs" src="img/Poodle.png" onclick="openModal('img/redeem/poodle.jpg')">
+			<img class="dogs" src="img/Labrador Retriever.png" onclick="openModal('img/redeem/Labrador retriever.jpg')">
+			<img class="dogs" src="img/Siberian Husky.png" onclick="openModal('img/redeem/siberian husky.jpg')">
+			<img class="dogs" src="img/Rottweiler.png" onclick="openModal('img/redeem/Rottweiler.jpg')">
+			<img class="dogs" src="img/Yorkshire Terrier.png" onclick="openModal('img/redeem/Yorkshire.jpg')">
+			<img class="dogs" src="img/American Pit Bull Terrier.png" onclick="openModal('img/redeem/American pit bull.jpg')">
+			<img class="dogs" src="img/mixed.png" onclick="openModal('img/redeem/Mixed.jpg')">
+			<img class="dogs" src="img/German Shepherd.png" onclick="openModal('img/redeem/German shepherd.jpg')">
+			<img class="dogs" src="img/Chihuahua.png" onclick="openModal('img/redeem/chihuahua.jpg')">
+			<img class="dogs" src="img/Shih Tzu.png" onclick="openModal('img/redeem/Shih tzu.jpg')">
+			<img class="dogs" src="img/Pit Bull.png" onclick="openModal('img/redeem/Pit bull.jpg')">
 		</div>
 
 
@@ -221,6 +293,32 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- 弹窗 -->
+<div id="modal">
+	<div id="modal-content">
+	  <span class="close" onclick="closeModal()">&times;</span>
+	  <button onclick="search()">REDEEM</button>
+	  <img src="" id="modal-image">
+	</div>
+  </div>
+  
+  <script>
+  // 打开弹窗
+  function openModal(imageUrl) {
+	var modal = document.getElementById("modal");
+	var modalImage = document.getElementById("modal-image");
+	modal.style.display = "block"; // 显示弹窗
+	modalImage.src = imageUrl; // 设置弹窗中的图片
+  }
+  
+  // 关闭弹窗
+  function closeModal() {
+	var modal = document.getElementById("modal");
+	modal.style.display = "none"; // 隐藏弹窗
+  }
+  </script>
+
 </body>
 
 </html>

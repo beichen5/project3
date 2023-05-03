@@ -1,0 +1,302 @@
+[
+  {
+    "image": "./img/portfolio/pitbull.jpg",
+    "breed": "Pit Bull",
+    "Personality": "Aggressive",
+    "Dog bite cases": 4004
+  },
+  {
+    "image": "./img/portfolio/Shih Tzu.jpg",
+    "breed": "Shih Tzu",
+    "Personality": "Aggressive",
+    "Dog bite cases": 731
+  },
+  {
+    "image": "./img/portfolio/Chihuahua.jpg",
+    "breed": "Chihuahua",
+    "Personality": "Aggressive",
+    "Dog bite cases": 646
+  },
+  {
+    "image": "./img/portfolio/German Shepherd.jpg",
+    "breed": "German Shepherd",
+    "Personality": "Aggressive",
+    "Dog bite cases": 622
+  },
+  {
+    "image": "./img/portfolio/mixed.jpg",
+    "breed": "Mixed",
+    "Personality": "Aggressive",
+    "Dog bite cases": 559
+  },
+  {
+    "image": "./img/portfolio/American Pit Bull.jpg",
+    "breed": "American Pit Bull Terrier",
+    "Personality": "Aggressive",
+    "Dog bite cases": 520
+  },
+  {
+    "image": "./img/portfolio/Yorkshire Terrier.jpg",
+    "breed": "Yorkshire Terrier",
+    "Personality": "Aggressive",
+    "Dog bite cases": 480
+  },
+  {
+    "image": "./img/portfolio/Rottweiler.jpg",
+    "breed": "Rottweiler",
+    "Personality": "Aggressive",
+    "Dog bite cases": 316
+  },
+  {
+    "image": "./img/portfolio/Siberian Husky.jpg",
+    "breed": "Siberian Husky",
+    "Personality": "Aggressive",
+    "Dog bite cases": 303
+  },
+  {
+    "image": "./img/portfolio/Labrador Retriever.jpg",
+    "breed": "Labrador Retriever",
+    "Personality": "Aggressive",
+    "Dog bite cases": 282
+  },
+  {
+    "image": "./img/portfolio/poodle.jpg",
+    "breed": "Poodle",
+    "Personality": "Aggressive",
+    "Dog bite cases": 264
+  },
+  {
+    "image": "./img/portfolio/bull dog.jpg",
+    "breed": "Bull Dog",
+    "Personality": "Aggressive",
+    "Dog bite cases": 220
+  },
+  {
+    "image": "./img/portfolio/Jack Russell Terrier.jpg",
+    "breed": "Jack Russell Terrier",
+    "Personality": "Alert",
+    "Dog bite cases": 190
+  },
+  {
+    "image": "./img/portfolio/Cocker Spaniel.jpg",
+    "breed": "Cocker Spaniel",
+    "Personality": "Alert",
+    "Dog bite cases": 172
+  },
+  {
+    "image": "./img/portfolio/terrier.jpg",
+    "breed": "Terrier",
+    "Personality": "Alert",
+    "Dog bite cases": 158
+  },
+  {
+    "image": "./img/portfolio/Beagle.jpg",
+    "breed": "Beagle",
+    "Personality": "Alert",
+    "Dog bite cases": 142
+  },
+  {
+    "image": "./img/portfolio/Golden Retriever.jpg",
+    "breed": "Golden Retriever",
+    "Personality": "Alert",
+    "Dog bite cases": 133
+  },
+  {
+    "image": "./img/portfolio/Shiba Inu.jpg",
+    "breed": "Shiba Inu",
+    "Personality": "Alert",
+    "Dog bite cases": 127
+  },
+  {
+    "image": "./img/portfolio/American Staffordshire Terrier.jpg",
+    "breed": "American Staffordshire Terrier",
+    "Personality": "Alert",
+    "Dog bite cases": 123
+  },
+  {
+    "image": "./img/portfolio/Pomeranian.jpg",
+    "breed": "Pomeranian",
+    "Personality": "Alert",
+    "Dog bite cases": 119
+  },
+  {
+    "image": "./img/portfolio/boxer.jpg",
+    "breed": "Boxer",
+    "Personality": "Alert",
+    "Dog bite cases": 109
+  },
+  {
+    "image": "./img/portfolio/Chow Chow.jpg",
+    "breed": "Chow Chow",
+    "Personality": "Alert",
+    "Dog bite cases": 84
+  },
+  {
+    "image": "./img/portfolio/Doberman Pinscher.jpg",
+    "breed": "Doberman Pinscher",
+    "Personality": "Alert",
+    "Dog bite cases": 80
+  },
+  {
+    "image": "./img/portfolio/Bichon Frise.jpg",
+    "breed": "Bichon Frise",
+    "Personality": "Alert",
+    "Dog bite cases": 72
+  },
+  {
+    "image": "./img/portfolio/canecorso.jpg",
+    "breed": "Cane Corso",
+    "Personality": "Alert",
+    "Dog bite cases": 71
+  },
+  {
+    "image": "./img/portfolio/Australian Shepherd.jpg",
+    "breed": "Australian Shepherd",
+    "Personality": "Alert",
+    "Dog bite cases": 67
+  },
+  {
+    "image": "./img/portfolio/husky.jpg",
+    "breed": "Husky",
+    "Personality": "Alert",
+    "Dog bite cases": 66
+  },
+  {
+    "image": "./img/portfolio/Akita.jpg",
+    "breed": "Akita",
+    "Personality": "Alert",
+    "Dog bite cases": 65
+  },
+  {
+    "image": "./img/portfolio/Boston Terrier.jpg",
+    "breed": "Boston Terrier",
+    "Personality": "Alert",
+    "Dog bite cases": 64
+  },
+  {
+    "image": "./img/portfolio/Havanese.jpg",
+    "breed": "Havanese",
+    "Personality": "Alert",
+    "Dog bite cases": 63
+  },
+  {
+    "image": "./img/portfolio/Dachshund Smooth Coat.jpg",
+    "breed": "Dachshund Smooth Coat",
+    "Personality": "Alert",
+    "Dog bite cases": 61
+  },
+  {
+    "image": "./img/portfolio/Miniature Pinscher.jpg",
+    "breed": "Miniature Pinscher",
+    "Personality": "Alert",
+    "Dog bite cases": 60
+  },
+  {
+    "image": "./img/portfolio/Lhasa Apso.jpg",
+    "breed": "Lhasa Apso",
+    "Personality": "Alert",
+    "Dog bite cases": 54
+  },
+  {
+    "image": "./img/portfolio/American Bully.jpg",
+    "breed": "American Bully",
+    "Personality": "Alert",
+    "Dog bite cases": 52
+  },
+  {
+    "image": "./img/portfolio/Pekingese.jpg",
+    "breed": "Pekingese",
+    "Personality": "Alert",
+    "Dog bite cases": 51
+  },
+  {
+    "image": "./img/portfolio/corgi.jpg",
+    "breed": "Corgi",
+    "Personality": "Friendly",
+    "Dog bite cases": 48
+  },
+  {
+    "image": "./img/portfolio/Great Dane.jpg",
+    "breed": "Great Dane",
+    "Personality": "Friendly",
+    "Dog bite cases": 44
+  },
+  {
+    "image": "./img/portfolio/West High White Terrier.jpg",
+    "breed": "West High White Terrier",
+    "Personality": "Friendly",
+    "Dog bite cases": 42
+  },
+  {
+    "image": "./img/portfolio/pug.jpg",
+    "breed": "Pug",
+    "Personality": "Friendly",
+    "Dog bite cases": 41
+  },
+  {
+    "image": "./img/portfolio/Mastiff.jpg",
+    "breed": "Mastiff",
+    "Personality": "Friendly",
+    "Dog bite cases": 39
+  },
+  {
+    "image": "./img/portfolio/Labradoodle.jpg",
+    "breed": "Labradoodle",
+    "Personality": "Friendly",
+    "Dog bite cases": 37
+  },
+  {
+    "image": "./img/portfolio/Wheaton Terrier.jpg",
+    "breed": "Wheaton Terrier",
+    "Personality": "Friendly",
+    "Dog bite cases": 35
+  },
+  {
+    "image": "./img/portfolio/Collie.jpg",
+    "breed": "Collie",
+    "Personality": "Friendly",
+    "Dog bite cases": 35
+  },
+  {
+    "image": "./img/portfolio/Rhodesian Ridgeback.jpg",
+    "breed": "Rhodesian Ridgeback",
+    "Personality": "Friendly",
+    "Dog bite cases": 32
+  },
+  {
+    "image": "./img/portfolio/BelgianShepherd.jpg",
+    "breed": "Belgian Shepherd",
+    "Personality": "Friendly",
+    "Dog bite cases": 32
+  },
+  {
+    "image": "./img/portfolio/sharpei.jpg",
+    "breed": "Shar-Pei",
+    "Personality": "Friendly",
+    "Dog bite cases": 28
+  },
+  {
+    "image": "./img/portfolio/hound.jpg",
+    "breed": "Hound",
+    "Personality": "Friendly",
+    "Dog bite cases": 24
+  },
+  {
+    "image": "./img/portfolio/Dalmatian.jpg",
+    "breed": "Dalmatian",
+    "Personality": "Friendly",
+    "Dog bite cases": 22
+  },
+  {
+    "image": "./img/portfolio/Weimaraner.jpg",
+    "breed": "Weimaraner",
+    "Personality": "Friendly",
+    "Dog bite cases": 22
+  },
+  {
+    "image": "./img/portfolio/cockapoo.jpg",
+    "breed": "Cockapoo",
+    "Personality": "Friendly",
+    "Dog bite cases": 22
+  }
+]
