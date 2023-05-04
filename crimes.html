@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>crimes</title>
+    <style>
+        body{
+            background-color: black;
+            cursor: url('./img/glass.png'), auto;
+        }
+
+        @font-face {
+            font-family: merriweather;
+            src: url(font/MerriweatherSans-Bold.ttf);
+        }
+        
+        .box1 {
+            margin-top:10%;
+            position: relative;
+            width: 300px;
+            height: 220px;
+        }
+        
+        .image1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        .text1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            font-family: merriweather;
+        }
+
+        .box1 img {
+            opacity: 1;
+        }
+        
+        .box1:hover img {
+            opacity: 0;
+            filter: brightness(50%);
+        }
+        
+        .box1 p {
+            opacity: 0;
+        }
+        
+        .box1:hover p {
+            font-size: 30px;
+            opacity: 1;
+        }
+
+        .box2 {
+            position: relative;
+            margin-left: 20%;
+            width: 300px;
+            height: 220px;
+        }
+        
+        .image2{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        .text2{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            font-family: merriweather;
+        }
+
+        .box2 img {
+            opacity: 1;
+        }
+        
+        .box2:hover img {
+            opacity: 0;
+            filter: brightness(50%);
+        }
+        
+        .box2 p {
+            opacity: 0;
+        }
+        
+        .box2:hover p {
+            font-size: 30px;
+            opacity: 1;
+        }
+
+        .box3 {
+            position: relative;
+            margin-top:-20%;
+            margin-left: 40%;
+            width: 300px;
+            height: 220px;
+        }
+        
+        .image3{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        .text3{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            font-family: merriweather;
+        }
+
+        .box3 img {
+            opacity: 1;
+        }
+        
+        .box3:hover img {
+            opacity: 0;
+            filter: brightness(50%);
+        }
+        
+        .box3 p {
+            opacity: 0;
+        }
+        
+        .box3:hover p {
+            font-size: 30px;
+            opacity: 1;
+        }
+
+        .box4 {
+            position: relative;
+            margin-top:-20%;
+            margin-left: 60%;
+            width: 300px;
+            height: 220px;
+        }
+        
+        .image4{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        .text4{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            font-family: merriweather;
+        }
+
+        .box4 img {
+            opacity: 1;
+        }
+        
+        .box4:hover img {
+            opacity: 0;
+            filter: brightness(50%);
+        }
+        
+        .box4 p {
+            opacity: 0;
+        }
+        
+        .box4:hover p {
+            font-size: 30px;
+            opacity: 1;
+        }
+
+        .box5 {
+            position: relative;
+            margin-top:-20%;
+            margin-left: 80%;
+            width: 300px;
+            height: 220px;
+        }
+        
+        .image5{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        .text5{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            font-family: merriweather;
+        }
+
+        .box5 img {
+            opacity: 1;
+        }
+        
+        .box5:hover img {
+            opacity: 0;
+            filter: brightness(50%);
+        }
+        
+        .box5 p {
+            opacity: 0;
+        }
+        
+        .box5:hover p {
+            font-size: 30px;
+            opacity: 1;
+        }
+        
+        img:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 50%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.5;
+        }
+        
+        img:hover:before {
+            left: 50%;
+            transition: all 0.5s ease;
+        }
+
+        .footer-fixed {
+			bottom: 0;
+			width: 100vw;
+			height: 50px;
+			display: flex;
+			flex-direction: row-reverse;
+			position: fixed;
+			background-color: black;
+			z-index: 20;
+		}
+
+		.footer-text {
+			border: 3px solid white;
+			margin-top: 6px;
+			margin-right: 10px;
+			font-size: 20px;
+			color: #fff;
+			font-family: merriweather;
+			padding:4px;
+		}
+
+		.footer-fixed-placeholder {
+			height: 50px;
+			width: 100vw;
+			margin-top: 30px;
+		}
+
+        a:link{
+            text-decoration: none;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+        <img class="image1" src="img/footprint/footprint1.png">
+        <a href="Queens.html"><p class="text1">QUEENS</p></a>
+    </div>
+    <div class="box2">
+        <img class="image2" src="img/footprint/2.png">
+        <a href="Manhattan.html"><p class="text2">MANHATTAN</p></a>
+    </div>
+    <div class="box3">
+        <img class="image3" src="img/footprint/3.png">
+        <a href="Brooklyn.html"><p class="text3">BROOKLYN</p></a>
+    </div>
+    <div class="box4">
+        <img class="image4" src="img/footprint/4.png">
+        <a href="Bronx.html"><p class="text4">Bronx</p></a>
+    </div>
+    <div class="box5">
+        <img class="image5" src="img/footprint/5.png">
+        <a href="Staten island.html"><p class="text5">STATEN ISLAND</p></a>
+    </div>
+    <div class="footer-fixed">
+        <div class="footer-fixed-list">
+            <a href="test.html"><div class="footer-text">BACK</div></a>
+        </div>
+    </div>
+  </body>
+</html>

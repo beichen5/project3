@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Manhattan</title>
+    <style>
+
+        body{
+            background-color: black;
+        }
+
+        @font-face {
+            font-family: merriweather;
+            src: url(font/MerriweatherSans-Bold.ttf);
+        }
+
+        .area{
+            color: white;
+            font-size:100px;
+            font-family:merriweather;
+        }
+        /*.small_text {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }*/
+        .puppy{
+            font-family: merriweather;
+            font-size: 40px;
+            padding:10px;
+            border-radius: clamp(0.4rem, 0.75vw, 1rem);
+            color:white;
+            position: absolute;
+            bottom: 20px;
+            right: 0;
+        }
+        .number{
+            font-family: merriweather;
+            font-size: clamp(3rem, 10vw, 10rem);
+            padding:10px;
+            border-radius: clamp(0.4rem, 0.75vw, 1rem);
+            color:black;
+            position: absolute;
+            bottom: 90px;
+            right: 0;
+        }
+        .number:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .footer-text {
+			border: 1px solid white;
+			margin-top: 10px;
+			margin-right: 10px;
+			font-size: 20px;
+			color: #fff;
+			font-family: merriweather;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+		}
+
+    </style>
+  </head>
+  <body>
+    <div class="area">
+        <div>MANHATTAN</div>
+        <div> High Risk Areas</div>
+    </div>
+    <div class="small_text">
+        <div class="number">5,270</div>
+        <div class="puppy">puppies were arrested here</div>
+        <div class="footer-fixed-list">
+            <a href="crimes.html"><div class="footer-text">BACK</div></a>
+        </div>
+    </div>
+  </body>
+</html>
