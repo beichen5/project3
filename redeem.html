@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Queens</title>
+    <title>redeem</title>
     <style>
     body{
         background-color: black;
@@ -12,10 +12,91 @@
         font-family: merriweather;
         src: url(font/MerriweatherSans-Bold.ttf);
     }
+
+    .text{
+        color:white;
+        font-family: merriweather;
+    }
+
+    .title{
+        font-size: 50px;
+    }
     
+    .footer-fixed {
+		bottom: 0;
+		width: 100vw;
+		height: 50px;
+		display: flex;
+		flex-direction: row-reverse;
+		position: fixed;
+		background-color: black;
+		z-index: 20;
+    }
+    
+    .footer-text {
+        border: 3px solid white;
+        margin-top: 6px;
+        margin-right: 10px;
+        font-size: 20px;
+        color: #fff;
+        font-family: merriweather;
+        padding:4px;
+    }
+    
+    .footer-text:hover {
+        border: 3px solid white;
+        color: black;
+        background-color: white;
+    }
+
+    a:link{
+        color:white;
+        text-decoration: none;
+    }
+    
+    a:visited{
+        color:white;
+        text-decoration: none;
+    }
+
+    .underline-effect {
+        position: relative; /* 让伪元素的定位以当前元素为基准 */
+        padding-bottom: 2px; /* 设置下划线距离文字的间距 */
+        font-size:20px;
+    }
+    
+    .underline-effect::before {
+        content: ''; /* 必须设置content属性，否则伪元素不会显示 */
+        position: absolute; /* 让下划线相对于当前元素的定位 */
+        left: 0; /* 让下划线从左边开始显示 */
+        bottom: 0; /* 让下划线显示在文字下方 */
+        width: 0; /* 初始时不显示下划线 */
+        height: 2px; /* 下划线的高度 */
+        background-color: white; /* 下划线的颜色 */
+        transition: width 0.3s ease; /* 过渡效果：宽度从0到100%，动画时间0.3秒，动画速度ease */
+    }
+    
+    .underline-effect:hover::before {
+        width: 100%; /* 鼠标hover时，让下划线宽度为100%，即从左到右出现 */
+    }
+
     </style>
   </head>
   <body>
-    
+    <div class="text">
+        <div class="title">Check the link to redeem</div>
+        <div class="underline-effect"><a href="https://www.nycacc.org/">Animal Care Centers of NYC</a></div>
+        <div class="underline-effect"><a href="https://www.adoptapet.com/dog-adoption">Adopt a Pet</a></div>
+        <div class="underline-effect"><a href="https://www.petfinder.com/">Petfinder</a></div>
+        <div class="underline-effect"><a href="https://www.aspca.org/adopt-pet/adoptable-dogs-your-local-shelter">ASPCA</a></div>
+        <div class="underline-effect"><a href="https://www.puppyspot.com/puppies-for-sale?cq_src=bing_ads&cq_cmp=Search_Breeds_All_Desktop&cq_con=Ex%20-%20Breed%20Adoption_Desktop&cq_term=%2BDogs%20%2BOnline%20%2BAdoption&cq_med=&cq_net=o&cq_plt=bp&prm=3-1128&utm_content=prm=3-1128&opt=%2BDogs%20%2BOnline%20%2BAdoption&msclkid=d2b87c19fdfd16af4c54184daa5657cc&utm_source=bing&utm_medium=cpc&utm_campaign=Search_Breeds_All_Desktop&utm_term=%2BDogs%20%2BOnline%20%2BAdoption">PuppySpot</a></div>
+        <div class="underline-effect"><a href="https://petclassifieds.com/ad_location/new-york/?msclkid=c950a456730b190269adc002fef65fd3&utm_source=bing&utm_medium=cpc&utm_campaign=Search%20Traffic%20Clicks%20State%20New%20York&utm_term=Cheap%20Puppies&utm_content=Dogs%20%26%20Puppies%20for%20Sale">Petclassifieds.com</a></div>
+
+        <div class="footer-fixed">
+			<div class="footer-fixed-list">
+				<a href="test.html"><div class="footer-text">BACK</div></a>
+			</div>
+		</div>
+    </div>
   </body>
 </html>
